@@ -1,0 +1,10 @@
+
+.SIcon{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    gap:0.7rem;
+    /* background-color: white; */
+}

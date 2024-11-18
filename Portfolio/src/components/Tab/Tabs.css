@@ -1,0 +1,73 @@
+.minitabbtn{
+    cursor: pointer;
+    position: absolute;
+    
+}
+.minicontainer{
+    top: 1;
+    position:fixed;
+    z-index: 1;
+}
+
+.himinitabbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    
+    
+}
+.indicator{
+    background-color: rgb(28, 28, 30);
+    border-radius: 45px;
+    inset: 0;
+    position: absolute;
+    cursor: pointer;
+  
+    
+}
+    .hi{
+        display: flex;
+        position: relative;
+        padding: 10px;
+        
+        
+    }
+.highlight{
+    position: relative;
+    cursor: pointer;
+    /* color:white; */
+    /* mix-blend-mode:exclusion; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    color: white;
+    
+}
+
+.TabButton
+{
+    font-size: 15px;
+}
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display:none;
+}
+.minitab{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    background-color: rgb(17, 17, 20);
+    border-radius: 40px;
+    padding: 7px;
+    top: 0;
+    position:sticky;
+    z-index: 1;
+    
+}

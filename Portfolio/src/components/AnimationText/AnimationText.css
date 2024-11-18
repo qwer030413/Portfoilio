@@ -1,0 +1,53 @@
+
+
+.header{
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: start;
+    font-family: 'Poppins', sans-serif;
+    max-height: 100px;
+}
+.about{
+    font-size: 80px;
+    color: white;
+    display: inline-block;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Outfit', sans-serif;
+    max-height: 100px;
+    align-items: start;
+    margin-bottom: 50px;
+}
+.small{
+    font-size: 35px;
+    color: white;
+    display: inline-block;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+
+
+
+    text-align: start;
+
+
+}
+.span{
+    display: inline-block;
+    white-space: pre;
+}
+.Projects{
+    font-size: 80px;
+    color: white;
+    display: inline-block;
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+
+
+    max-height: 100px;
+    align-items: center;
+
+
+}

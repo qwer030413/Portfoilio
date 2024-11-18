@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.ProjectCards{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 330px;
+    height: 245px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+    /* gap:1rem; */
+}
+
+.GreenCard{
+    background-color: #14e960;
+}
+.BlueCard{
+    background-color: #3b94fe;
+}
+.YellowCard{
+    background-color: #fdff49;
+}
+.RedCard{
+    background-color: #ff8787;
+}
+.PinkCard{
+    background-color: #ffb5ec;
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.title{
+    font-size: 23px;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.description{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    text-align: start;
+}
+.line{
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+}
+.date{
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+.githubButton{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.bubble{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.arrowMove {
+  transform: translateX(7px);
+  transition: transform 0.4s ease;
+}
+.arrowBack{
+    transform: translateX(-7px);
+  transition: transform 0.3s ease-out;
+}
