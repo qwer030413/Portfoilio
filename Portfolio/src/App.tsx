@@ -15,6 +15,7 @@ function App() {
   const SkillRef = useRef<HTMLDivElement| null>(null);
   const ProjectRef = useRef<HTMLDivElement| null>(null);
   const [tabs, setTabs] = useState(1);
+  document.title = "Chris(Seojin) Park";
   function updateTabs(id: number, tab: any)
   {
       setTabs(id);   
