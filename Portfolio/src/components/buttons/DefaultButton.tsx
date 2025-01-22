@@ -8,6 +8,7 @@ function DefaultButton(props: any) {
       <motion.button
       className={`DButton ${props.color}`}
       whileHover = {{y:-10}}
+      style={{color:'white'}}
       // onClick = {props.click}
       
       >

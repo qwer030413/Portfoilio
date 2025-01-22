@@ -9,7 +9,7 @@ export default function SkillIcon(props:any){
         whileHover={{scale: 1.2, transition: { duration: 0.1, type: "spring", stiffness: 400, damping: 10}}}
         >
             {props.icon}
-            <text>{props.text}</text>
+            <text style={{color:'white'}}>{props.text}</text>
         </motion.div>
     );
 }
