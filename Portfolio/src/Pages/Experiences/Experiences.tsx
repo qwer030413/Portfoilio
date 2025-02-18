@@ -12,8 +12,8 @@ function Experiences(props:any) {
             Used: "Python | Django | REST APIs | PostgreSQL",
             date : "January 2025 - Present",
             location : "El Cajon, California",
-            description1: "• Used Django to create REST API endpoints and migrations for the SPEAR project",
-            description2: "• Collected and filtered data from clients in PostgreSQL to improve accuracy",
+            description1: "- Streamlined REST API endpoints and database migrations using Django to support the SPEAR project, improving backend efficiency and scalability",
+            description2: "- Collaborated in debugging and refactoring backend code to improve maintainability and reduce execution time",
             icon: <MdWork />
         },
         {
@@ -22,18 +22,18 @@ function Experiences(props:any) {
             Used: "Data Annocations | Large Language Models (LLM)",
             date : "October 2024 - Present",
             location : "(Remote)",
-            description1: "• Annotated and labeled 100+ datasets, ensuring high-quality training data to improve AI model accuracy",
-            description2: "• Reviewed, analyzed, and debugged AI-generated code snippets, identifying logical errors and providing corrective feedback to refine AI-driven development tools",
+            description1: "- Annotated and labeled 100+ datasets, ensuring high-quality training data to boost AI model accuracy",
+            description2: "- Reviewed, analyzed, and debugged 200+ AI-generated code snippets, identifying logical errors and providing corrective feedback to refine AI-driven development tools",
             icon: <MdWork />
         },
         {
             id : 3,
-            title: "Software Developer @ CSES",
+            title: "Full-Stack Developer @ CSES",
             Used: "React Native | Node.js | PostgreSQL | AWS",
             date : "September 2024 - Present",
             location : "University of California, San Diego",
-            description1: "• Integrated Node.js APIs to handle transactions and data processing, ensuring seamless backend communication",
-            description2: "• Followed CI/CD Pipeline,  utilizing GitHub Actions for automated testing and deployment",
+            description1: "- Developed 15+ pages and components for a React Native mobile app Triton Spend, an app to help UCSD students track their finances and spending habits",
+            description2: "- Integrated Node.js APIs to handle transactions and data processing, ensuring seamless backend communication",
             icon: <MdWork />
         },
         {
@@ -42,8 +42,8 @@ function Experiences(props:any) {
             Used: "React Native | Django | REST APIs | Python | Typescript",
             date : "July 2024 - August 2024",
             location : "San Diego, California (Remote)",
-            description1: "• Designed and developed multiple reusable React Native components for a full-stack social media application, enhancing UI consistency and user engagement",
-            description2: "• Integrated over 50+ Django REST APIs, ensuring low-latency data retrieval and seamless client-server communication",
+            description1: "- Designed and Crafted 20+ reusable React Native components for a full-stack social media application, enhancing UI consistency and user engagement",
+            description2: "- Integrated over 100+ Django REST APIs, ensuring low-latency data retrieval and seamless client-server communication",
             icon: <MdWork />
         },
         {
@@ -52,8 +52,8 @@ function Experiences(props:any) {
                 Used: "JIRA | Git | Firmware",
                 date : "June 2021 - August 2021",
             location : "Carlsbad, California",
-            description1: "• Conducted 600+ firmware tests on company products on company products, ensuring software reliability and functionality",
-            description2: "• Identified and documented software and hardware defects using JIRA, facilitating efficient issue tracking and resolution",
+            description1: "- Conducted 600+ firmware tests on company products on company products, ensuring software reliability and functionality",
+            description2: "- Identified and documented software and hardware defects using JIRA, facilitating efficient issue tracking and resolution",
             icon: <MdWork />
         },
         {
@@ -62,8 +62,8 @@ function Experiences(props:any) {
             Used: "Jupiter Notebook | SKlearn | Pandas | Beautiful Soup",
             date : "October 2020 - August 2021",
             location : "Carlsbad, California (Remote)",
-            description1: "• Developed a basic recommendation system using Pandas and Jupyter Notebook, applying data analysis techniques to personalize user suggestions",
-            description2: "• Scraped, cleaned, and structured web data using BeautifulSoup, enhancing dataset quality for machine learning experiments",
+            description1: "- Built a basic recommendation system using Pandas and Jupyter Notebook, applying data analysis techniques to personalize user suggestions",
+            description2: "- Scraped, cleaned, and structured web data using BeautifulSoup, enhancing dataset quality for machine learning experiments",
             icon: <MdWork />
         },
         
