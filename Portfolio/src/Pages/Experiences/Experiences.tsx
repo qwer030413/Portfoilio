@@ -12,7 +12,7 @@ function Experiences(props:any) {
             Used: "Python | Django | REST APIs | PostgreSQL",
             date : "January 2025 - Present",
             location : "El Cajon, California",
-            description1: "- Streamlined REST API endpoints, implemented CRUD functionality, and managed database migrations using Django to support the SPEAR project, improving backend efficiency and scalability",
+            description1: "- Streamlined REST API endpoints, implemented CRUD functionality, and managed database model migrations using Django to create a Case Management System (CMS), improving backend efficiency and scalability",
             description2: "- Collaborated in refactoring in backend code and wrote Unit Tests to improve maintainability and reduce execution time",
             icon: <MdWork />
         },
@@ -53,7 +53,7 @@ function Experiences(props:any) {
                 date : "June 2021 - August 2021",
             location : "Carlsbad, California",
             description1: "- Conducted 600+ firmware tests on company products, automating Unit and Integration testing for reliability",
-            description2: "- Identified and documented software and hardware defects using JIRA, facilitating efficient issue tracking and resolution",
+            description2: "- Identified and documented software and hardware defects using Jira, facilitating efficient issue tracking and resolution",
             icon: <MdWork />
         },
         {
