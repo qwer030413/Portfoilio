@@ -7,8 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import {motion} from 'framer-motion';
-import Resume from '../../Resume.pdf'
 function Welcome(props:any) {
+  const Resume = '/Resume.pdf';
   const MainAnimation = { 
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, staggerChildren: 0.2 } },
