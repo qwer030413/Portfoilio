@@ -32,6 +32,9 @@
 .PinkCard{
     background-color: #ffb5ec;
 }
+.WhiteCard{
+    background-color: #FEF5EF;
+}
 .cardHeader{
     display: flex;
     align-items: center;
