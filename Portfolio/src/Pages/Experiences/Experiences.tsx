@@ -7,17 +7,27 @@ import 'react-vertical-timeline-component/style.min.css';
 function Experiences(props:any) {
     let timeLine = [
         {
-            id : 1,
+            id : 9,
+            title: "Software Engineer Intern @ Live Nation Entertainment",
+            Used: "Python | PySpark | Databricks | Pandas | LLMs | Data Science",
+            date : "September 2025 - December 2025",
+            location : "Remote",
+            description1: "- Developed and refined LLM-based pipelines to classify genres for 60,000+ artists",
+            description2: "- Cleaned and transformed 100,000+ records using pandas, PySpark, and SQL in Databricks to support ML models",
+            icon: <MdWork />
+        },
+        {
+            id : 8,
             title: "Software Engineer Intern - ML @ TransCore",
             Used: "Python | Open Webui | Fast API | Ollama | LLMs | Fine Tuning",
-            date : "June 2025 - Present",
+            date : "June 2025 - September 2025",
             location : "Remote",
-            description1: "- Developing specialized AI agents using LLMs fine-tuned with Ollama, integrated with Open WebUI to manage model interactions, and incorporated domain-specific knowledge bases for tolling system challenges",
+            description1: "- Developed specialized AI agents using LLMs fine-tuned with Ollama, integrated with Open WebUI to manage model interactions, and incorporated domain-specific knowledge bases for tolling system challenges",
             description2: "- Created prompt-based tools in Python to enable tool calling for tasks like data look-up and support for internal systems",
             icon: <MdWork />
         },
         {
-            id : 2,
+            id : 7,
             title: "Software Developer - Service Now @ UCSD ITS",
             Used: "JavaScript | Service Now | Jira | BitBucket",
             date : "May 2025 - June 2025",
@@ -27,7 +37,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 3,
+            id : 6,
             title: "Software Engineer Intern @ Argus West Investigations",
             Used: "Python | Django | REST APIs | PostgreSQL",
             date : "January 2025 - Present",
@@ -37,7 +47,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 4,
+            id : 5,
             title: "Software Engineer - AI Trainer @ Alignerr",
             Used: "Data Annocations | Large Language Models (LLM)",
             date : "October 2024 - Present",
@@ -47,7 +57,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 5,
+            id : 4,
             title: "Full-Stack Developer @ CSES",
             Used: "React Native | Node.js | PostgreSQL | AWS",
             date : "September 2024 - Present",
@@ -57,7 +67,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 6,
+            id : 3,
             title: "Software Engineer Intern @ Falkor",
             Used: "React Native | Django | REST APIs | Python | Typescript",
             date : "July 2024 - August 2024",
@@ -67,7 +77,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 7,
+            id : 2,
             title: "Software Test Engineer Intern @ Sun Tech",
                 Used: "JIRA | Git | Firmware",
                 date : "June 2021 - August 2021",
@@ -77,7 +87,7 @@ function Experiences(props:any) {
             icon: <MdWork />
         },
         {
-            id : 8,
+            id : 1,
             title: "Machine Learning Intern @ STEM Away",
             Used: "Jupiter Notebook | SKlearn | Pandas | Beautiful Soup",
             date : "October 2020 - August 2021",

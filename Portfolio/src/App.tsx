@@ -38,10 +38,10 @@ function App() {
               else if (scrollY < tab3Boundary + 500) {
                 setTabs(2); 
               }
-              else if (scrollY < tab4Boundary + 500){
+              else if (scrollY < tab4Boundary + 3700){
                 setTabs(3);
               }
-              else if (scrollY < tab5Boundary + 400){
+              else if (scrollY < tab5Boundary + 500){
                 setTabs(4);
               }
               else if (scrollY < tab6Boundary){
