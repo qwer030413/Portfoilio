@@ -1,11 +1,12 @@
 
 .SkillsContainer{
     display: flex;
-    margin-top: 200px;
-    width: 800px;
+    margin-top: clamp(72px, 14vw, 200px);
+    width: min(100%, 800px);
     align-items: center;
     justify-content: center;
-    height: 800px;
+    min-height: 800px;
+    height: auto;
     flex-direction: column;
     gap:3rem;
     
@@ -13,14 +14,14 @@
 
 .SkillListContainer{
     display: flex;
-    width: 800px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap:1.5rem;
     flex-wrap: wrap;
 }
 .Svg{
-    width: 85px;
+    width: clamp(58px, 16vw, 85px);
 }
 .SkillsContainer .SkillListContainer .SkillItem {
   opacity: 0;
@@ -31,4 +32,15 @@
 .SkillsContainer .SkillListContainer .SkillItem.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 520px) {
+    .SkillsContainer {
+        min-height: auto;
+        gap: 2rem;
+    }
+
+    .SkillListContainer {
+        gap: 1.2rem 0.75rem;
+    }
 }

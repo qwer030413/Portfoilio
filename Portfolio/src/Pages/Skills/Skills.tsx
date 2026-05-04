@@ -52,7 +52,7 @@ export default function Skills(props:any){
   };
     return(
         <div className='SkillsContainer' ref = {props.Propref} id = "section4">
-            <motion.h1 variants = {headerVariants} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.3 }}>My Skills</motion.h1>
+            <motion.h1 variants = {headerVariants} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.3 }} style={{fontWeight: '100'}}>My Skills</motion.h1>
             <motion.div 
             className='SkillListContainer'
             initial="hidden"

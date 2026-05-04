@@ -5,16 +5,23 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    width: 330px;
-    height: 245px;
+    width: min(360px, calc(100vw - 32px));
+    min-height: 245px;
+    height: auto;
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
+    gap: 0.9rem;
     
     /* gap:1rem; */
+}
+
+.cards {
+    display: block;
+    max-width: 100%;
 }
 
 .GreenCard{
@@ -52,6 +59,7 @@
     color: black;
     font-weight: 600;
     text-align: start;
+    overflow-wrap: anywhere;
 }
 .line{
     width: 100%;
@@ -62,6 +70,7 @@
     font-size: 17px;
     color: black;
     font-weight: 600;
+    text-align: right;
 }
 .githubButton{
 
@@ -87,4 +96,23 @@
 .arrowBack{
     transform: translateX(-7px);
   transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 430px) {
+    .ProjectCards {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
 }

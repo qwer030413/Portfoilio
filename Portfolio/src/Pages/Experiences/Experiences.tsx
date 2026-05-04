@@ -1,134 +1,130 @@
-import './Experiences.css'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { MdWork } from "react-icons/md";
-
-import 'react-vertical-timeline-component/style.min.css';
-
-function Experiences(props:any) {
-    let timeLine = [
-        {
-            id : 9,
-            title: "Software Engineer Intern @ Live Nation Entertainment",
-            Used: "Python | PySpark | Databricks | Pandas | LLMs | Data Science",
-            date : "September 2025 - December 2025",
-            location : "Remote",
-            description1: "- Developed and refined LLM-based pipelines to classify genres for 60,000+ artists",
-            description2: "- Cleaned and transformed 100,000+ records using pandas, PySpark, and SQL in Databricks to support ML models",
-            icon: <MdWork />
-        },
-        {
-            id : 8,
-            title: "Software Engineer Intern - ML @ TransCore",
-            Used: "Python | Open Webui | Fast API | Ollama | LLMs | Fine Tuning",
-            date : "June 2025 - September 2025",
-            location : "Remote",
-            description1: "- Developed specialized AI agents using LLMs fine-tuned with Ollama, integrated with Open WebUI to manage model interactions, and incorporated domain-specific knowledge bases for tolling system challenges",
-            description2: "- Created prompt-based tools in Python to enable tool calling for tasks like data look-up and support for internal systems",
-            icon: <MdWork />
-        },
-        {
-            id : 7,
-            title: "Software Developer - Service Now @ UCSD ITS",
-            Used: "JavaScript | Service Now | Jira | BitBucket",
-            date : "May 2025 - June 2025",
-            location : "La Jolla, CA",
-            description1: "- Contributed to the design and debugging of IT systems using ServiceNow and Jira, following Agile Development",
-            description2: "- Wrote and maintained custom scripts in JavaScript and created Record Producers, Catalog Items, and Flows",
-            icon: <MdWork />
-        },
-        {
-            id : 6,
-            title: "Software Engineer Intern @ Argus West Investigations",
-            Used: "Python | Django | REST APIs | PostgreSQL",
-            date : "January 2025 - Present",
-            location : "El Cajon, California",
-            description1: "- Streamlined REST API endpoints, implemented CRUD functionality, and managed database model migrations using Django to create a Case Management System (CMS), improving backend efficiency and scalability",
-            description2: "- Collaborated in refactoring in backend code and wrote Unit Tests to improve maintainability and reduce execution time",
-            icon: <MdWork />
-        },
-        {
-            id : 5,
-            title: "Software Engineer - AI Trainer @ Alignerr",
-            Used: "Data Annocations | Large Language Models (LLM)",
-            date : "October 2024 - Present",
-            location : "(Remote)",
-            description1: "- Annotated and labeled 300+ datasets, ensuring high-quality training data to boost AI model accuracy",
-            description2: "- Reviewed, analyzed, and debugged 200+ AI-generated code snippets, identifying logical errors and providing corrective feedback to refine AI-driven development tools",
-            icon: <MdWork />
-        },
-        {
-            id : 4,
-            title: "Full-Stack Developer @ CSES",
-            Used: "React Native | Node.js | PostgreSQL | AWS",
-            date : "September 2024 - Present",
-            location : "University of California, San Diego",
-            description1: "- Integrated Google Authentication for secure user login and Node.js APIs to handle transactions and data processing",
-            description2: "- Used AWS for backend services and managed PostgreSQL as the database, ensuring scalability and efficient data storage",
-            icon: <MdWork />
-        },
-        {
-            id : 3,
-            title: "Software Engineer Intern @ Falkor",
-            Used: "React Native | Django | REST APIs | Python | Typescript",
-            date : "July 2024 - August 2024",
-            location : "San Diego, California (Remote)",
-            description1: "- Designed over 50+ reusable React Native components for a full-stack social media application, enhancing UI consistency and user engagement",
-            description2: "- Implemented lazy loading, pagination, and optimized API calls, reduced load time on frontend by 30%",
-            icon: <MdWork />
-        },
-        {
-            id : 2,
-            title: "Software Test Engineer Intern @ Sun Tech",
-                Used: "JIRA | Git | Firmware",
-                date : "June 2021 - August 2021",
-            location : "Carlsbad, California",
-            description1: "- Conducted 600+ firmware tests on company products, automating Unit and Integration testing for reliability",
-            description2: "- Identified and documented software and hardware defects using Jira, facilitating efficient issue tracking and resolution",
-            icon: <MdWork />
-        },
-        {
-            id : 1,
-            title: "Machine Learning Intern @ STEM Away",
-            Used: "Jupiter Notebook | SKlearn | Pandas | Beautiful Soup",
-            date : "October 2020 - August 2021",
-            location : "Carlsbad, California (Remote)",
-            description1: "- Built a basic recommendation system using Pandas and Jupyter Notebook, applying data analysis techniques to personalize user suggestions and improve user engagement",
-            description2: "- Scraped, cleaned, and structured web data using BeautifulSoup, enhancing dataset quality for machine learning experiments",
-            icon: <MdWork />
-        },
-        
-    ]
-    return (
-        <div className='ExperiencesContainer' ref = {props.Propref} id = "section3">
-            <h1>My Experiences</h1>
-            <VerticalTimeline className = "VT">
-                {timeLine.map(Exp => {
-                    return(
-                        <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        key = {Exp.id}
-                        date = {Exp.date}
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', padding:'10px' }}
-                        icon = {Exp.icon}
-                        contentStyle={{ background: 'rgb(40, 40, 50)', color: '#fff'}}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                        
-                        >
-                            <h3 className="WorkTitle">{Exp.title}</h3>
-                            <h4 className='Location'>{Exp.location}</h4>
-                            <h5 className='Used'>{Exp.Used}</h5>
-                            <p className='des'>{Exp.description1}</p>
-                            <p className='des'>{Exp.description2}</p>
-                        </VerticalTimelineElement>
-                    )
-                })}
-            </VerticalTimeline>
-
-        </div>
-      
-        
-    
-    )
+import { LegacyRef} from 'react';
+import './Experiences.css';
+import ExperienceCard from './ExperienceCard'
+const timeline = [
+  {
+    id: 9,
+    title: "Software Engineer Intern",
+    company: "Live Nation Entertainment",
+    used: ["Python", "PySpark", "Databricks", "Pandas", "LLMs", "Data Science"],
+    date: "Sep 2025 – Dec 2025",
+    location: "Remote",
+    bullets: [
+      "Developed and refined LLM-based pipelines to classify genres for 60,000+ artists",
+      "Cleaned and transformed 100,000+ records using pandas, PySpark, and SQL in Databricks to support ML models",
+    ],
+  },
+  {
+    id: 8,
+    title: "Software Engineer Intern – ML",
+    company: "TransCore",
+    used: ["Python", "Open Webui", "Fast API", "Ollama", "LLMs", "Fine Tuning"],
+    date: "Jun 2025 – Sep 2025",
+    location: "Remote",
+    bullets: [
+      "Developed specialized AI agents using LLMs fine-tuned with Ollama, integrated with Open WebUI to manage model interactions",
+      "Created prompt-based tools in Python to enable tool calling for tasks like data look-up and support for internal systems",
+    ],
+  },
+  {
+    id: 7,
+    title: "Software Developer – ServiceNow",
+    company: "UCSD ITS",
+    used: ["JavaScript", "ServiceNow", "Jira", "BitBucket"],
+    date: "May 2025 – Jun 2025",
+    location: "La Jolla, CA",
+    bullets: [
+      "Contributed to the design and debugging of IT systems using ServiceNow and Jira, following Agile Development",
+      "Wrote and maintained custom scripts in JavaScript and created Record Producers, Catalog Items, and Flows",
+    ],
+  },
+  {
+    id: 6,
+    title: "Software Engineer Intern",
+    company: "Argus West Investigations",
+    used: ["Python", "Django", "REST APIs", "PostgreSQL"],
+    date: "Jan 2025 – April 2025",
+    location: "El Cajon, CA",
+    bullets: [
+      "Streamlined REST API endpoints, implemented CRUD functionality, and managed database model migrations using Django",
+      "Collaborated in refactoring backend code and wrote Unit Tests to improve maintainability and reduce execution time",
+    ],
+  },
+  {
+    id: 5,
+    title: "Software Engineer – AI Trainer",
+    company: "Alignerr",
+    used: ["Data Annotation", "LLMs"],
+    date: "Oct 2024 – March 2025",
+    location: "Remote",
+    bullets: [
+      "Annotated and labeled 300+ datasets, ensuring high-quality training data to boost AI model accuracy",
+      "Reviewed, analyzed, and debugged 200+ AI-generated code snippets, providing corrective feedback to refine AI tools",
+    ],
+  },
+  {
+    id: 4,
+    title: "Full-Stack Developer",
+    company: "CSES @ UC San Diego",
+    used: ["React Native", "Node.js", "PostgreSQL", "AWS"],
+    date: "Sep 2024 – May 2025",
+    location: "La Jolla, CA",
+    bullets: [
+      "Integrated Google Authentication for secure user login and Node.js APIs to handle transactions and data processing",
+      "Used AWS for backend services and managed PostgreSQL as the database, ensuring scalability and efficient data storage",
+    ],
+  },
+  {
+    id: 3,
+    title: "Software Engineer Intern",
+    company: "Falkor",
+    used: ["React Native", "Django", "REST APIs", "Python", "TypeScript"],
+    date: "Jul 2024 – Aug 2024",
+    location: "San Diego, CA",
+    bullets: [
+      "Designed 50+ reusable React Native components for a full-stack social media application, enhancing UI consistency",
+      "Implemented lazy loading, pagination, and optimized API calls, reducing frontend load time by 30%",
+    ],
+  },
+  {
+    id: 2,
+    title: "Software Test Engineer Intern",
+    company: "Sun Tech",
+    used: ["JIRA", "Git", "Firmware"],
+    date: "Jun 2021 – Aug 2021",
+    location: "Carlsbad, CA",
+    bullets: [
+      "Conducted 600+ firmware tests on company products, automating Unit and Integration testing for reliability",
+      "Identified and documented software and hardware defects using Jira, facilitating efficient issue tracking and resolution",
+    ],
+  },
+  {
+    id: 1,
+    title: "Machine Learning Intern",
+    company: "STEM Away",
+    used: ["Jupyter Notebook", "Sklearn", "Pandas", "BeautifulSoup"],
+    date: "Oct 2020 – Aug 2021",
+    location: "Remote",
+    bullets: [
+      "Built a recommendation system using Pandas and Jupyter Notebook, applying data analysis to personalize user suggestions",
+      "Scraped, cleaned, and structured web data using BeautifulSoup, enhancing dataset quality for ML experiments",
+    ],
+  },
+];
+ 
+ 
+function Experiences(props: { Propref: LegacyRef<HTMLElement> | undefined; }) {
+  return (
+    <section className="exp-section" ref={props.Propref} id="section3">
+        <h1 style={{color:'white', fontWeight: '100'}}>My Experiences</h1>
+ 
+      <div className="exp-list">
+        {timeline.map((exp, i) => (
+          <ExperienceCard key={exp.id} exp={exp} index={i}/>
+        ))}
+      </div>
+    </section>
+  );
 }
-
-export default Experiences
+ 
+export default Experiences;

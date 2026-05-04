@@ -1,9 +1,9 @@
 
 .ProjectsContainer{
-    width: 75vw;
+    width: min(100%, 1180px);
     display: flex;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: clamp(32px, 8vw, 100px) 0;
     align-items:center;
     justify-content: center;
     gap:2rem;
@@ -12,6 +12,8 @@
 .Projects{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 .React{
     background-color: rgb(0, 0, 0);
@@ -21,6 +23,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 520px) {
+    .ProjectsContainer {
+        gap: 1rem;
+    }
+
+    .ProjectsContainer .cards {
+        transform: translateY(32px);
+    }
 }
 .ProjectsContainer .cards {
   opacity: 0;

@@ -30,7 +30,7 @@ export default function Projects(props:any){
     }, []);
     return(
         <div className='Projects' id = "section5" ref={props.Propref}>
-            <h1>Projects</h1>
+            <h1 style={{fontWeight: '100', }}>Projects</h1>
             <div className='ProjectsContainer'>
                 <ProjectCards color = "WhiteCard" 
                 icon = {<FaNoteSticky color='black' size = {30}/>}
@@ -58,7 +58,7 @@ export default function Projects(props:any){
                 />
                 <ProjectCards color = "GreenCard" 
                 icon = {<BsFillCameraVideoFill color='black' size = {30}/>}
-                title = "Get Home Safe (HARD Hack)"
+                title = "Get Home Safe"
                 description = "Device that can detect threats in the dark and help users contact help"
                 used = "Python | Open CV | Raspberry Pi"
                 date = "April 2024"
