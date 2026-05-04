@@ -226,12 +226,13 @@
   }
 
   .exp-section {
-    margin-top: 64px;
-    padding: 0 0 80px;
+    margin-top: 40px;
+    padding: 0 0 52px;
   }
 
   .exp-card {
     padding: 18px 16px;
+    border-radius: 10px;
   }
 
   .exp-title {

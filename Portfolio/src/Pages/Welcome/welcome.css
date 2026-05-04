@@ -19,6 +19,11 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.Options > div,
+.Options a {
+    display: flex;
+}
 .WelcomeText{
     font-size: clamp(2rem, 8vw, 50px);
     font-weight: 500;
@@ -35,12 +40,27 @@
 
 @media (max-width: 640px) {
     .Welcome {
-        min-height: auto;
-        padding-top: 5rem;
+        min-height: 92vh;
+        padding-top: 7.25rem;
+        justify-content: flex-start;
     }
 
     .Options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.75rem;
         margin-top: 32px;
+        max-width: 340px;
+    }
+
+    .Options > div,
+    .Options a {
+        width: 100%;
+    }
+
+    .Options > div:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc((100% - 0.75rem) / 2);
     }
 }

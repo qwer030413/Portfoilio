@@ -153,18 +153,28 @@
 
 @media (max-width: 520px) {
   .AboutMe {
-    padding: 64px 0;
+    padding: 40px 0;
   }
 
   .AboutContainer {
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .Picture {
+    width: min(240px, 78vw);
+    border-radius: 16px;
   }
 
   .AboutHeader h1 {
     font-size: 2.25rem;
   }
 
+  .AboutHeader {
+    margin-bottom: 22px;
+  }
+
   .TextContent p {
-    font-size: 1rem;
+    font-size: 0.97rem;
+    line-height: 1.65;
   }
 }

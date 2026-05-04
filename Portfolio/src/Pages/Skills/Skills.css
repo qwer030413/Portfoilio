@@ -37,10 +37,11 @@
 @media (max-width: 520px) {
     .SkillsContainer {
         min-height: auto;
-        gap: 2rem;
+        margin-top: 40px;
+        gap: 1.75rem;
     }
 
     .SkillListContainer {
-        gap: 1.2rem 0.75rem;
+        gap: 1rem 0.5rem;
     }
 }
